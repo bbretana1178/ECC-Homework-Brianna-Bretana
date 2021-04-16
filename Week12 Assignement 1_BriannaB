@@ -1,0 +1,29 @@
+#Brianna Bretana
+#Program creates a .txt file adds data and appends data in file
+#Week 12 Assignment 1
+
+#Creates the first function
+def main():
+#Creates a file in the write mode and writes the data into the file with new lines
+    outfile=open('cartoon.txt','w')
+    outfile.write('Shaggy\n')
+    outfile.write('Scooby-Doo\n')
+    outfile.write('Daphne\n')
+    outfile.write('Velma\n')
+    outfile.close()
+#Calls the main funcion
+main()
+#This is the second function
+def file_edit():
+#Opens file with the append mode and adds the two names to the end of file
+    outfile=open('cartoon.txt','a')
+    outfile.write('Fred\n')
+    outfile.write('Scrappy\n')
+    outfile.close()
+#Calls the second function
+file_edit()
+#Opens the file in read mode, assign variable to the read command and prints the contents of the file
+infile=open('cartoon.txt','r')
+file_contents=infile.read()
+print(file_contents)
+
